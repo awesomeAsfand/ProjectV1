@@ -37,6 +37,20 @@ Configure the database: Update the .env file in the project directory with your 
 - DB_PASSWORD=
 
 
+Open a terminal and navigate to the project directory. Run the following commands to set up the database:
+```bash
+php artisan migrate
+```
+Run the following command in the project directory to start the Laravel development server:
+
+```bash
+php artisan serve
+```
+
+
+
+
+
 
 
 
