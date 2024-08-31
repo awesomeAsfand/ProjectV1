@@ -6,21 +6,41 @@ This project is built with Laravel and utilizes Filament for the admin panel, Bl
 
 ## Prerequisites
 
-- PHP 8.0 or higher
-- Laravel 9.x or higher
-- Composer
-- laragon
-- Node.js and npm
-- Filament
-- Blueprint
-- Socialite
+- laragon - https://laragon.org/
+- Node.js and npm - https://nodejs.org/en
+- Filament- https://filamentphp.com/docs/3.x/panels/installation
+- Blueprint- https://blueprint.laravelshift.com/docs/available-commands/
+- Socialite - https://v2.filamentphp.com/plugins/socialite#installation
 
 ## Installation
 
 ### Clone the Repository
 
-First, clone the repository to your local machine:
+First, clone the repository to your local machine within you laragon installation:
 
 ```bash
-git clone https://github.com/yourusername/your-repository.git
+C:\laragon\www\git clone https://github.com/yourusername/your-repository.git
+```
+Navigate to the cloned repository folder
+
+```bash
 cd your-repository
+```
+
+Configure the database: Update the .env file in the project directory with your database credentials (e.g., DB_USERNAME, DB_PASSWORD, etc.)
+#### example
+- DB_CONNECTION=mysql
+- DB_HOST=127.0.0.1
+- DB_PORT=3306
+- DB_DATABASE=your_database
+- DB_USERNAME=root
+- DB_PASSWORD=
+
+
+
+
+
+
+
+
+ 
