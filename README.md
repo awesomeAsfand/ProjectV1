@@ -2,14 +2,18 @@
 
 ## Introduction
 
-This project is built with Laravel and utilizes Filament for the admin panel, Blueprint for generating schemas, views, tables, and forms, and the DutchCodingCompany-Filament-Socialite plugin for Google and Facebook OAuth login.
+This project is built with Laravel and utilizes Filament for the admin panel, Blueprint for generating schemas, views, tables, and forms, and the Socialite plugin for OAuth login through Laravel Socialite to Filament.
 
 ## Prerequisites
 
 - PHP 8.0 or higher
-- Composer
 - Laravel 9.x or higher
-- Node.js and npm (if you have frontend assets)
+- Composer
+- laragon
+- Node.js and npm
+- Filament
+- Blueprint
+- Socialite
 
 ## Installation
 
