@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project is built with Laravel and utilizes Filament for the admin panel, Blueprint for generating schemas, views, tables, and forms, and the Socialite plugin for OAuth login through Laravel Socialite to Filament.
+This project is built with Laravel and utilizes Filament for the admin panel, Blueprint for generating schemas, tables, forms and action, Socialite plugin for OAuth login through Laravel Socialite to Filament.
 
 ## Prerequisites
 
@@ -46,6 +46,12 @@ Run the following command in the project directory to start the Laravel developm
 ```bash
 php artisan serve
 ```
+## OAuth login through Laravel Socialite
+
+If you want to log in through Google or Facebook, be sure to edit the .env file in your project directory and add your Google and Facebook credentials.
+
+
+
 
 
 
