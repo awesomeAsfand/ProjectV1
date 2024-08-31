@@ -51,7 +51,7 @@ php artisan serve
 If you want to log in through Google or Facebook, be sure to edit the .env file in your project directory and add your Google and Facebook credentials.
 
 
-
+####COntinued
 
 
 
