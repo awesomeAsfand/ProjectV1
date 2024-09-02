@@ -7,10 +7,7 @@ This project is built with Laravel and utilizes Filament for the admin panel, Bl
 ## Prerequisites
 
 - laragon - https://laragon.org/
-- Node.js and npm - https://nodejs.org/en
-- Filament- https://filamentphp.com/docs/3.x/panels/installation
-- Blueprint- https://blueprint.laravelshift.com/docs/available-commands/
-- Socialite - https://v2.filamentphp.com/plugins/socialite#installation
+
 
 ## Installation
 
@@ -27,38 +24,42 @@ Navigate to the cloned repository folder
 cd your-repository
 ```
 
-Configure the database: Update the .env file in the project directory with your database credentials (e.g., DB_USERNAME, DB_PASSWORD, etc.)
-#### example
-- DB_CONNECTION=mysql
-- DB_HOST=127.0.0.1
-- DB_PORT=3306
-- DB_DATABASE=your_database
-- DB_USERNAME=root
-- DB_PASSWORD=
-
-
+We now need to create the .env file. Laravel ships with an example .env file so we can copy that one with the cp command.
+```bash
+cp .env.example .env
+```
 Open a terminal and navigate to the project directory. Run the following commands to set up the database:
 ```bash
 php artisan migrate
 ```
+You can create a new user account with the following command or use Login and registration page:
+```bash
+php artisan make:filament-user
+```
+
+
 Run the following command in the project directory to start the Laravel development server:
 
 ```bash
 php artisan serve
 ```
+
 ## OAuth login through Laravel Socialite
 
-If you want to log in through Google or Facebook, be sure to edit the .env file in your project directory and add your Google and Facebook credentials.
+Since sensitive information isn't included in the GitHub repository, if you want to log in through Google or Facebook, 
+make sure to edit the .env file in your project directory and add your Google and Facebook credentials.
 
+```bash
+# Google
+GOOGLE_CLIENT_ID=your-google-client-id
+GOOGLE_CLIENT_SECRET=your-google-client-secret
+GOOGLE_REDIRECT_URL=https://your-domain.com/auth/google/callback
 
-####COntinued
-
-
-
-
-
-
-
+# Facebook
+FACEBOOK_CLIENT_ID=your-facebook-client-id
+FACEBOOK_CLIENT_SECRET=your-facebook-client-secret
+FACEBOOK_REDIRECT_URL=https://your-domain.com/auth/facebook/callback
+```
 
 
 
