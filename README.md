@@ -28,6 +28,10 @@ We now need to create the .env file. Laravel ships with an example .env file so 
 ```bash
 cp .env.example .env
 ```
+
+Next, ensure that all required packages are installed. Open the composer.json file in your project folder, and run the necessary commands to install the packages.
+
+
 Open a terminal and navigate to the project directory. Run the following commands to set up the database:
 ```bash
 php artisan migrate
